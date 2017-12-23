@@ -1,0 +1,91 @@
+@font-face {
+  font-family: 'Cinetype';
+  font-weight: normal;
+  src: url('/fonts/GT-Cinetype-Regular.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cinetype';
+  font-weight: bold;
+  src: url('/fonts/GT-Cinetype-Bold.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cinetype';
+  font-style: italic;
+  src: url('/fonts/GT-Cinetype-Regular-Italic.woff') format('woff');
+}
+@font-face {
+  font-family: 'Cinetype-Mono';
+  src: url('/fonts/GT-Cinetype-Mono.woff') format('woff');
+}
+
+@mixin underline {
+  text-decoration-skip: ink;
+  text-decoration: underline;
+}
+
+.underline {
+  @include underline;
+}
+
+body {
+  font-family: 'Cinetype', sans-serif;
+  font-feature-settings: "ss01", "zero", "onum";
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.5;
+  font-kerning: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  // font-variant-numeric: oldstyle-nums;
+}
+
+
+h1,
+h2,
+h3,
+h4 {
+  font-weight: normal;
+  a {
+    @include underline;
+  }
+}
+
+p, .auto-size li {
+  font-size: calc(100% + 8 * ((100vw - 320px) / (#{$mq-lg * 16} - 320)));
+  @include mq(lg) {
+    font-size: 1.5rem;
+  };
+  margin: 2rem 0;
+}
+
+
+p > a {
+  @include underline;
+}
+
+a {
+  text-decoration: none;
+  color: $link-color;
+  position: relative;
+  &:hover {
+    color : #000;
+  }
+}
+
+i, blockquote, em {
+  font-style: italic;
+}
+
+code {
+  overflow: auto;
+}
+
+pre > code {
+  font-family: 'Cinetype-Mono', sans-serif;
+  font-feature-settings: "ss01", "zero";
+  font-style: normal;
+  padding: 1.5rem;
+  background: #222;
+  display: block;
+  color: #fff;
+}

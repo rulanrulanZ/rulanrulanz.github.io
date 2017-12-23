@@ -1,0 +1,282 @@
+.tiles {
+  @include mq(md) {
+    max-width: $tileWidth * 4;
+  }
+}
+
+.tile-content {
+  height: $tileHeight - 72px;
+  padding:1.5rem;
+  z-index: 1;
+  width: 100%;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+
+  @include mq(sm) {
+    height: $tileHeight - 32px;
+    padding:1.5rem;
+  }
+  @include mq(md) {
+    height: $tileHeight;
+    padding:1.5rem;
+  }
+}
+
+.tile-bg {
+  top: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(0);
+  will-change: transform;
+  height: 100%;
+  position : absolute;
+}
+
+.tile-cover {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1;
+}
+
+.tile-shadow {
+  opacity: 0;
+  transition: 1s $bezier all;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -2;
+}
+
+.tile {
+  width: 100%;
+  position: relative;
+  list-style: none;
+  margin: 0;
+
+  &.flip {
+    .tile-content {
+      opacity: 1;
+    }
+    .tile-bg {
+      opacity: 1;
+      transform: scale(1);
+
+    }
+  }
+
+  @include mq(sm) {
+    width: 50%;
+  }
+  @include mq(md){
+    width: 25%;
+    margin-bottom: 0
+  }
+
+  .tile-link {
+    position: static;
+  }
+  .tile-video {
+    transition: .4s $bezier all;
+    width: 50%;
+    bottom: 0;
+    position: absolute;
+    opacity: 1;
+    right: 0;
+    z-index: 3;
+
+    @include mq(md) {
+      opacity: 0;
+      width: 70%;
+    }
+    video::-webkit-media-controls-start-playback-button {
+      display: none;
+    }
+  }
+  .tile-image {
+    transition: .4s $bezier all;
+    width: 50%;
+    max-width: 14rem;
+    bottom: 0;
+    position: absolute;
+    opacity: 1;
+    right: 0;
+    z-index: 2;
+
+    @include mq(md) {
+      opacity: 0;
+      max-width: initial;
+      width: percentage(2/3);
+    }
+  }
+
+  .tile-title > span {
+    visibility: visible;
+    display: inline-block;
+  }
+
+  .tile-title {
+    font-size: 1.25rem;
+    margin: 0;
+    visibility: hidden;
+    @include mq(lg) {
+      font-size: 1.5rem;
+    };
+  }
+
+  p {
+    margin: 0;
+  }
+
+  &.promoted {
+    width: 100%;
+    @include mq(sm) {
+      width: 75%;
+    }
+    @include mq(md) {
+      width: 50%;
+    }
+  }
+
+  &.expanded {
+    position: relative;
+    z-index: 2;
+    .tile-image {
+      @include mq(md) {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+    .tile-video {
+      @include mq(md) {
+        opacity: 1;
+        transform: translate(0, 0);
+      }
+    }
+    .tile-title {
+      visibility: visible;
+    }
+  }
+}
+
+
+.expanded {
+  .tile-image {
+    opacity: 0;
+  }
+  .readmore {
+    opacity: 1;
+    transform: translateX(8px);
+    @include mq(md) {
+      opacity: 0;
+    }
+  }
+  .tile-bg {
+    @include mq(md) {
+      transform: scale(1.25);
+    }
+    .tile-shadow {
+      opacity: .4;
+    }
+  }
+}
+.leftmost {
+  .tile-bg {
+    @include mq(md) {
+      transform-origin: left;
+    }
+    @include mq(lg) {
+      transform-origin: center;
+    }
+  }
+
+  &.expanded {
+    .tile-bg {
+      @include mq(md) {
+        transform: scale(1.25);
+        transform-origin: left;
+      }
+      @include mq(lg) {
+        transform: scale(1.25);
+        transform-origin: center;
+      }
+    }
+  }
+}
+.centermost {
+  &.expanded {
+    .tile-bg {
+      @include mq(md) {
+        transform: scale(1.25);
+      }
+    }
+  }
+}
+.rightmost {
+  .tile-bg {
+    @include mq(md) {
+      transform-origin: right;
+    }
+    @include mq(lg) {
+      transform-origin: center;
+    }
+  }
+  &.expanded {
+    .tile-bg {
+      @include mq(md) {
+        transform: scale(1.25);
+        transform-origin: right;
+      }
+      @include mq(lg) {
+        transform: scale(1.25);
+        transform-origin: center;
+      }
+    }
+  }
+}
+
+.spacer {
+  display:none;
+  margin: 0;
+  @include mq(md) {
+    display: block;
+    width: 25%;
+    height: $tileHeight;
+    &-double {
+      width: 50%;
+    }
+  }
+}
+
+.readmore {
+  transition: 0.4s $bezier all;
+  position: relative;
+  z-index: 1;
+  padding: 0;
+  display: table;
+  float: right;
+
+  .arrow {
+    max-height: 24px;
+  }
+}
+
+.reveal {
+  opacity: 0;
+  transition: opacity 0.6s, transform .6s $bezier;
+  .tile-bg {
+    transition: .8s $bezier transform;
+  }
+  &_visible {
+    opacity: 1;
+    .tile-bg {
+      transform: scale(1);
+    }
+  }
+}

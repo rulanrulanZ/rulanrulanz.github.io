@@ -1,0 +1,13 @@
+.image {
+  overflow: hidden;
+  position: relative;
+  img {
+    position: absolute;
+    height: 100%;
+    object-fit: contain;
+    width: 100%;
+    top:0;
+    left: 0;
+  }
+
+}

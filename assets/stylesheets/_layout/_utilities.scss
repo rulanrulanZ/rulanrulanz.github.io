@@ -1,0 +1,36 @@
+.ti3 {
+  text-indent: $margin * 3;
+}
+
+.ml-auto { margin-left: auto; }
+.mr-auto { margin-right: auto; }
+
+::-webkit-scrollbar {
+    display: none;
+    width: 0;
+    background: 0 0;
+}
+
+@media screen and (min-width: 30em) {
+  .ml-auto-ns { margin-left: auto; }
+  .mr-auto-ns { margin-right: auto; }
+}
+
+.row {
+  max-width: $max-width;
+  margin: 0 auto;
+  width: 84%;
+  position: relative;
+}
+
+.hide-md {
+  display: block;
+  @include mq(md) {
+    display: none;
+  }
+}
+
+a:focus {
+  outline: 0;
+  box-shadow: 0 0 0 1.5px currentColor;
+}

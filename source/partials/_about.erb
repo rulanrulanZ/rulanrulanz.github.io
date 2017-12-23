@@ -1,0 +1,16 @@
+<% data.site.textTemplate.each do | id, this | %>
+  <% this.contentContainer.each do | this | %>
+    <% if this.value?("About me") %>
+      <% this.multicontentContainer.each do | this | %>
+        <section class="mt5 mt6-ns w-100 w-70-m w-70-l"><%= markdown(this['textBlock']) %></section>
+      <% end %>
+    <% end %>
+    <% if this.value?("3 column about") %>
+      <section class="g3">
+        <% this.multicontentContainer.each do | this | %>
+          <section class="mt5 mt6-ns nested-list-reset nested-copy-line-height"><%= markdown(this['textBlock']) %></section>
+        <% end %>
+      </section>
+    <% end %>
+  <% end %>
+<% end %>

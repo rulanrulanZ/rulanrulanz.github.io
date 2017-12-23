@@ -1,0 +1,13 @@
+<nav>
+  <div class="navigation">
+    <div class="row" style="color:<%= textColor ? (textColor) : ('#999') %>">
+      <a class="logo flex" href="/">
+        <%= partial(:'partials/logo', :locals => { :color => textColor }) %>
+      </a>
+      <ul class="menu-items">
+        <li><a href="/#home">Work</a></li>
+        <li><a href="/#about">About</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>

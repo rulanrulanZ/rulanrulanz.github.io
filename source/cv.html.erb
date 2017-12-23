@@ -1,0 +1,47 @@
+<% content_for(:title, 'CV Sebastian Graz') %>
+
+<div class="container" data-namespace="homepage">
+
+<%= partial "partials/nav", :locals => {:textColor => '#000' } %>
+
+<div class="cv row">
+  <div class="mb5 nested-list-reset nested-copy-line-height db flex-ns flex-row-ns flex-column justify-between">
+    <% data.site.cvTemplate.each do | id, this | %>
+
+
+      <main class="print-main measure-wide fl mt5 mt6-ns pr0 pr4-ns">
+        <p><%= markdown(this.cvIntro) %></p>
+        <ul>
+          <%  this.cvExperiences.each do | this | %>
+            <li>
+            <span class="f4 f3-ns mv4 dib"><%= this.title %></span>
+            <% this.multicontentContainer.each do | this | %>
+              <%= markdown(this.textBlock) %>
+            <% end %>
+            </li>
+          <% end %>
+        </ul>
+      </main>
+
+
+      <aside class="print-aside w-100 w-30-ns fl ">
+        <ul class="mt5 mt6-ns">
+        <%  this.cvDetails.each do | this | %>
+          <li class="dib w-100">
+          <span class="f4 f3-ns mv4 dib"><%= this.title %></span>
+          <% this.multicontentContainer.each do | this | %>
+            <div>
+               <%= markdown(this.textBlock) %>
+            </div>
+          <% end %>
+          </li>
+        <% end %>
+        </ul>
+      </aside>
+
+
+    <% end %>
+  </div>
+</div>
+
+</div>

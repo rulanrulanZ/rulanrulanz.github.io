@@ -1,0 +1,13 @@
+<h1><%= this.title %></h1>
+<p><%= this.subtitle %></p>
+<div class="file-share">
+  <% this.fileContainer.each do | file | %>
+    <a style="color:<%= globalThis.textColor%>; background:<%= globalThis.bgColor%>;" target="_blank" href="<%= file.fileMedia['url'] %>" download>
+      <img src="<%= file.fileImage['url']%>" alt="">
+      <div>
+        <p><%= file.title %></p>
+        <span class="f6">.<%= file.filetype %></span>
+      </div>
+    </a>
+  <% end %>
+</div>
