@@ -1,0 +1,213 @@
+---
+:id: 2HdKAJFt0Qq6O68Kmuy6Oo
+:title: Canon
+:titleHover: I helped Canon build a design system
+:tags:
+- 'Ecommerce '
+- UX Design
+:roles:
+- UX Designer
+- Prototyper
+- Visual Designer
+:caseStudyContainer:
+- :id: 6Q7LB9THX2meCEksKGuEg4
+  :title: design system overview
+  :videoFile:
+    :title: design-system-overview small
+    :description: 
+    :url: "//videos.contentful.com/y77stanzu634/4e6161k1okI8Y0qYEkYmwM/8d38660adde2de5d875880520406b850/overview-small.mp4"
+  :videoThumbnail:
+    :title: overview
+    :description: 
+    :url: "//images.contentful.com/y77stanzu634/OH1JmBepiuGgC26SKOkYK/e5337d3fc81aac337a639b8ebd53a93d/overview.png"
+  :videoDescription: Canon Design System
+- :id: 6wE2SGfrhKaE8mYSkgWEQK
+  :textBlock: "# Canon's problem statement\n\n# Canon wanted us to help them improve
+    the UI & UX of their Canon Store Website. \n\n# As it stands, design is wedged
+    into the process as an afterthought. Rather than having the design lead the digital
+    product. \n\nThere is a discrepancy between the sources of truth that designers
+    rely on. But also there is a gap in communication between designers and developers.
+    This renders the current website with inconsistencies in both the front-end and
+    design. Which directly hinders Canon's goal of becoming a <mark>premium</mark>
+    Canon Store. \n\n\n"
+  :align: right
+- :id: 1YGN6IPBhWE0gAoCMYCeGM
+  :textBlock: "# The solution\n\nA potential solution would be to redesign the whole
+    website. Stamping each design with a premium mark and calling it a day.  \n\nBut
+    the real solution was to create a design system. A system which embodies: design
+    principles, accessibility, design language and business rules. That would help
+    Canon be more consistent throughout their current digital products. But also future
+    Canon products. \n\nThis project has two major deliverables; the actual design
+    system, but also the design process that comes with it.\n"
+  :align: left
+- :id: 6vELhmHFNCkS6K0UOk6g8i
+  :imageName: design system overview image
+  :mediaContainer:
+    :title: design system overview image
+    :description: 
+    :url: "//images.contentful.com/y77stanzu634/6l7MMVvXqwmuAocAEAUGCE/aae8864f3c6e96b74d94f46a34afa11b/design_system_overview_image.png"
+- :id: 2EfxiObhzawWa6gCKaeWEs
+  :textBlock: "# Why design systems?\n\n> Design systems are not new. Design systems
+    have existed in parallel with branding guidelines for a long time. But only recently
+    have design systems taken a more digital approach.\n\nWhen we looked back at our
+    current design process of Canon. We realised that most designs decisions were
+    sourced from multiple style-guides or systems. \n\nWe joked that we'd create another
+    style-guide and confuse everyone even more. So it was important to get this design
+    system right. "
+  :align: left
+- :id: 2W2qdG4gByGwQcSGAk44II
+  :textBlock: "# How to get it right?\n\nBy making sure it's future proofed. Looking
+    back at the old styleguides. We found that most of them lived inside static documents.
+    More sophisticated styleguides lived online, but no one maintained them. So they
+    were essentially no better than static PDFs. \n\nSo to get it right we needed
+    to two-way bind the design system and the final production site. To avoid maintaining
+    two separate entities.  "
+  :align: left
+- :id: 4c8cGDlnkcccC4M4woaSiw
+  :textBlock: "# What did we do?  \n\nWe helped educate the client that exploring
+    homepage designs wasn't going to work. \n\nBy showing them examples of successful
+    digital products and their corresponding design systems. They were able to see
+    the importance of design systems. \n\nWe did our research on other design systems
+    before we dove in. We found that more successful design systems weren't just a
+    library of components. They were a collection jigsaw puzzle pieces, or Atoms.
+    \nAtoms resonated with me because the word tells what we wanted to achieve; a
+    building block. We wanted fundamental building blocks to build up the whole system.\n\nWe
+    discovered the popular Atom-approach to CSS (Tachyons, or acss.io). Where small
+    CSS utility classes would drive the layout and look of everything. \n\nBy using
+    these CSS utilities that we'd call Atoms. We were able to build everything we
+    wanted within a design constraint. \n\nConsider the following CSS Atom:\n\n    .f3
+    { font-size: 3 rem; }\n\nThis Atom handles two things; the font-size, and how
+    big the font-size is. \n\nImagine this next Atom:\n\n    .f4 { font-size: 4 rem;
+    }\n\nIt handles the same thing, but it increases that font-size by 1 rem. \nWe
+    have now successfully created a simple typescale that is constrained to a set
+    of design rules.\n\n![typescale](//images.contentful.com/y77stanzu634/4tyvCyh7egiAYQGYKCE24G/1231e1720911abe991df5009b3b08043/Screen_Shot_2017-09-25_at_18.08.58.png)\n\nWe
+    can now put in any font-size inside the CSS declaration. \nA fundamental example,
+    but it showcases our thinking.\nUsing this formula, we built the whole design
+    system for Canon."
+  :align: left
+- :id: 69AVLn5Paw0oyUwMQKSEqK
+  :title: homepage examples
+  :videoFile:
+    :title: homepage examples
+    :description: 
+    :url: "//videos.contentful.com/y77stanzu634/2btRtZYCwkSoesMWQSguYe/81908ba8c119160e05c8a5d89d98a27d/homepage_examples.mp4"
+  :videoThumbnail:
+    :title: homepagev1-search
+    :description: 
+    :url: "//images.contentful.com/y77stanzu634/17LanFyQukg48sQcYKooKu/6af477b44d21540eb2c8f64adb2cd7b7/homepagev1-search.png"
+  :videoDescription: Some homepage design iterations that we're designed during the
+    workshops
+- :id: TIYUFmc3q6io22uUamGU0
+  :title: prototype
+  :videoFile:
+    :title: prototype1
+    :description: 
+    :url: "//videos.contentful.com/y77stanzu634/6HRH6jXygMmcgUko4QAaCW/b85a4113cecbe3b3372f7c157ac6ac6e/prototype1.m4v"
+  :videoThumbnail:
+    :title: proto
+    :description: 
+    :url: "//images.contentful.com/y77stanzu634/13WSEcEmIy2yOsKE042iqI/8135a2d71b19bece8c7951c66db705db/proto.png"
+  :videoDescription: Rapid prototype created with HTML JS, and CSS(Tachyons)
+- :id: 3oS4MBK0V2qig0kyiSI62c
+  :textBlock: "# What did we solve? \n\nThe problem statement mentioned that design
+    was treated like an afterthought, this has been solved with the new design system
+    that works like a two-way binding between the final product and the design rules.\n\nThe
+    design systems helps designers to fast-track prototyping. Giving them the ability
+    to produce working prototypes that can be used for user testing. Which will also
+    make the resulting data more accurate. \n\nIt gives designers a front-end framework
+    that they can use to build pages that are always up to date. \n\nBusiness Analysts
+    to refer to the design system when working out new requirements with the business.
+    \n\nIt helps developers be more consistent and efficient when building out new
+    features. Because they no longer have to make up new components from scratch by
+    eyeing a static design documents.  \n\nCSS is deceptively hard to write on a large
+    scale. By having one CSS file that dictates the content for everything. And not
+    having to write new CSS for every new feature, means that were limiting the mistakes
+    that can be made. (And reduced CSS file bandwidth)\n\nRefactoring is easier because
+    everything is build by Atoms. \nFor instance when removing CSS code, its easier
+    to anticipate what it changes. \n"
+  :align: left
+- :id: 3fzpuUayFOIucK6aOs4CgI
+  :title: colorgen
+  :videoFile:
+    :title: colorgen-small
+    :description: 
+    :url: "//videos.contentful.com/y77stanzu634/13Ugx5g8aWGGO4aoGaAuSW/0f02fb48937443dd03fef8a2ea3508b8/colorgen-small.mp4"
+  :videoThumbnail:
+    :title: colorgen
+    :description: 
+    :url: "//images.contentful.com/y77stanzu634/3RAE9Kdn2wAs0cyQiAgumA/44eac9ac998c3dc416a357bf167dc69b/colorgen.png"
+  :videoDescription: A color generator I prototyped to be working alongside the design
+    system. Brand colors should also be based on a logic and a set of principles.
+    Read more about it here [here](https://www.graz.io/blog/tachyon-color-generator
+    "tachyon-color-generator")
+- :id: StDYZvLBYc4AiouycS4Sy
+  :textBlock: "# What did we not solve? \n\nWe wanted the design system to be built
+    upon React. To be able to componentize each design pattern such as button, inputs.
+    Our Atoms would live inside each React component. A button for a designer shouldn't
+    be a bunch of CSS utility classes in a row — it should be something like\n\n    <PrimaryButton>Link</PrimaryButton>\n
+    \   \nAs opposed to:\n\n    <button class=\"ph2 pv1 bg-red white dib mr2 mb2\">Link</button>\n\nWe
+    didn't solve this because of resourcing and time constraints. But we're are looking
+    forward to bring React in the next step.\n\nWe stress-tested the Atom design approach
+    with a conceptual homepage. But ideally we would have time to stress test the
+    approach with real data and try to re-create the pages that currently exists on
+    the Canon Store. \n\n![typoexamples](//images.contentful.com/y77stanzu634/6qaeh9XgBOSgEk8SUSya8G/30b2de702bd5c476677b5dec63d6192a/typoshowcase.jpg)\n\nAbove
+    is a screenshot of a HTML prototype. It's showcasing the typographical scale and
+    how powerful the layout Atoms can be. \n\nWe user tested the initial home page
+    explorations. We wanted to gauge how well a user can complete a task, along with
+    the visual attractiveness of the site. (<mark>Premium</mark> experience). We didn't
+    have time to user test the design system. By that I mean re-creating the Canon
+    site as a prototype with the new design system and use the old Canon Store website
+    as a control. \n\nAtomic CSS approach needs a pragmatic approach for it to work
+    well. \n\nFor instance; building a custom complex navigation with Atomic CSS will
+    be hard. The Atomic approach has troubles staying reusable. This is because everything
+    is exploded into smaller utility classes. \n\nA primary-button class reused throughout
+    the whole site is trivial to change. \n\nBut that logic can be dangerous because
+    you are changing things site-wide and unseen changes are often overlooked. \n\nwith
+    React this problem no longer exists because of the decoupled styling it offers. "
+  :align: left
+- :id: 5AiLhG6sa4ukyAyuC88Eow
+  :textBlock: "# Implementing\n\nCreating the design system easy. Actually implementing
+    the system is 90% of the work. \n\nSo how does one go about implementing a design
+    system? Like most things in product design, it's about talking to people. Simply
+    sharing the befits of a design system should make heads turn:\n\n- Higher return
+    of investment due to faster loading times\n- Less time & money is spent on development
+    and design\n- More accurate user testing, thus enabling the business to make better
+    design decisions\n- A more consistent and premium experience for users"
+  :align: left
+- :id: 1p496iHry4CEICgiuuIECe
+  :textBlock: "# What now?\n\nThe current system is again lacking major features such
+    as states. But we didn't implement them because we'd need a proper React setup.
+    Which wasn't added due to budget constraints.\n\nLike I mentioned, this deliverable
+    is bundled with a design process. For a company to adopt a design system and making
+    it work requires some effort. In an ideal world, every designer would be comfortable
+    creating mockups in HTML rather than using design software that produces static
+    images. In an ideal world, the developers receive a HTML deliverable that needs
+    very little tweaking. Business requirements would be based of the design system,
+    rather than making a *special case* for every new feature. \n\n"
+  :align: left
+- :id: 4tsmfHcHs4mWKcWEwUEWc8
+  :textBlock: "# My role\n\nI led, designed and developed the design system.\n\nI
+    prototyped design explorations using the Atomic design system approach (to showcase
+    it's versatility). I also prototyped a brand color generator tool to live alongside
+    the design system. \n\nOther responsibilities include:\n\n- helping ideate and
+    design the initial homepage explorations\n- Presenting the proof-of-concept homepage
+    designs to the clients and stakeholders.\n- Advocate the use of Atomic design
+    approach for the design system."
+  :align: left
+- :id: 6dI8QW0bsI4MUaAy6oA88g
+  :textBlock: "This project is still ongoing and there are bits and pieces missing.
+    Regardless of the state of the project I'm hoping this documents gives a better
+    glimpse of my design process and thinking. \n\nDon't hesitate to shoot any questions
+    at: [graz@live.se](mailto://graz@live.se)"
+  :subHeader: Questions?
+  :align: right
+:bgColor: "#d0eae4"
+:textColor: "#c00"
+:leftSpacing: 1
+:promoted: false
+:year: 2017
+:order: 5
+:locked: true
+:content_type_id: caseStudy
+:updated_at: Oct 30th — 2017
+:slug: canon

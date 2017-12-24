@@ -1,0 +1,35 @@
+---
+:id: 2AU2BTQVBqaUqWug0OuIKy
+:title: Tachyon color generator
+:titleHover: I built a Tachyon color generator
+:thumbnail:
+  :title: colorgen
+  :description: 
+  :url: "//images.contentful.com/y77stanzu634/25NL4FEhziYu6igACuQeGY/67752d944c307fe3f2ca7a9b487348c4/Frame.png"
+:blogContent:
+- :id: 2ZaMv2Zeo8m88WW84s0UKy
+  :textBlock: "[Link to prototype](https://colorgen.netlify.com)\n\nWhen working with
+    brand colours I always found it a bit messy to simply guess the colors in a color
+    palette. Colours shouldn't be made up out of the blue (heh). They should be thoughtfully
+    chosen based on a set of principles. Think hue rotation, darkness, lightness,
+    brightness, saturation and many more color parameters. \n\n![colorgen image](//images.contentful.com/y77stanzu634/5hGhpuuqNySqeqQ68kywE6/0540f19aba406e55c22da9723fa78583/Screen_Shot_2017-08-25_at_14.38.12.png)\n\nWhen
+    building design systems it's important that every UI element has a purpose and
+    is build with a certain logic in mind, and it should be the same for colours.
+    \n\nWith this problem in mind I developed a palette generator. \n\nEnter any color
+    HEX or color name and it will generate an aesthetically pleasing palette that
+    will complement the key color. The colours that are generated are hue rotated,
+    darkened or lightened accordingly to be a perfect match with the key color that
+    was entered.\n\nUse the generated colors for hover effects, branding elements,
+    marketing and those obscure edge-cases where you need that lighter version of
+    the brand color. \n\nAt this time there is only one set of color principles in
+    place. But in the future I will add custom color parameters, where designers can
+    fine tune how the color palette is generated. Until then I need to learn more
+    about VueJS.\n\n"
+:bgColor: "#E1F1A0"
+:textColor: "#111698"
+:leftSpacing: 0
+:promoted: false
+:postedDate: !ruby/object:DateTime 2017-08-25 00:00:00.000000000 Z
+:content_type_id: blog
+:updated_at: Aug 25th — 2017
+:slug: tachyon-color-generator

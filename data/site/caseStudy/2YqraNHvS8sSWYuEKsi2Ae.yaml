@@ -1,0 +1,36 @@
+---
+:id: 2YqraNHvS8sSWYuEKsi2Ae
+:title: Norse Sans
+:titleHover: I designed a typeface called Norse Sans
+:thumbnail:
+  :title: norse
+  :description: 
+  :url: "//images.contentful.com/y77stanzu634/1tvhVZobaEumosuE2UQkC8/3d49b4f88f07162f91a5ae6619a7ebd6/thumb.png"
+:tags:
+- Typeface
+:roles:
+- Designer
+:caseStudyContainer:
+- :id: 3ZwxISdtbyKAuYMMCgYGy8
+  :textBlock: "I designed Norse Sans. A typeface that is\n\n# Legible at small sizes.\nBecause
+    it's a digital typeface it needed to work it's magic on all sizes.\n\n# Design
+    system ready\nThe typeface should be versatile enough that it can be used as the
+    sole workhorse within a brand. \n\n# Idiosyncratic but easy to read\nThe biggest
+    catch-22 within type design is the will to be different from other typefaces.
+    But quickly realising that legibility is more important. Sure that uppercase R
+    might look swanky, but if the reader need to stop everytime they see a certain
+    letter, it's bad design. \n\n\n\n\n\n\n\n"
+- :id: MctcroRjA4uG0MigOiIES
+  :imageName: norse poster
+  :mediaContainer:
+    :title: norse1
+    :description: 
+    :url: "//images.contentful.com/y77stanzu634/4v7ISBkosMcOSc8c8qoSme/3367f4e09aa660fe726b1d6768c66c68/10-Poster-Mockup.jpg"
+:bgColor: "#F7E34B"
+:textColor: "#000000"
+:leftSpacing: 0
+:year: 2018
+:order: 6
+:content_type_id: caseStudy
+:updated_at: Dec 23rd — 2017
+:slug: norse-sans
