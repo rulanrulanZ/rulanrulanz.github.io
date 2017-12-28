@@ -3,10 +3,10 @@ html {
     -ms-text-size-adjust: 100%;
     -webkit-text-size-adjust: 100%}
 body {
-    margin: 0.5em;
-    font-size: 1.3em;
+    margin: 35px;
+    font-size: 14px;
     }
-article,aside,footer,header,nav,section {
+footer,header,nav,section {
     display: block
     }
 h1 {
